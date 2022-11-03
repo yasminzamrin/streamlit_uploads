@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import re
-import nltk
+#import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
