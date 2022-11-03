@@ -32,10 +32,10 @@ with top:
     model = st.radio("What model would you like to make the prediction?", ('Naive Bayes','Passive Aggressive'))
     
     if model == "Naive Bayes":
-        f = open('/model/NB_text.pickle', 'rb') #loading model
+        f = open('FAKE_NEWS/model/NB_text.pickle', 'rb') #loading model
         classifier = pickle.load(f)
     elif model == "Passive Aggressive":
-        f = open('/model/PA_text.pickle', 'rb') #loading model
+        f = open('FAKE_NEWS/model/PA_text.pickle', 'rb') #loading model
         classifier = pickle.load(f)
     
     st.write("  ")
