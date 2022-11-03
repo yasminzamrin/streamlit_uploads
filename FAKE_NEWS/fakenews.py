@@ -19,7 +19,7 @@ col4, col5 , col6 = st.columns(3)
 	
 with top:
 	with col2:
-		image = PIL.Image.open('images/logo.png')
+		image = PIL.Image.open('/images/logo.png')
 		st.image(image, width=350)
 		st.write("  ")
 		#st.title("FAKE NEWS DETECTION")
@@ -32,10 +32,10 @@ with top:
     model = st.radio("What model would you like to make the prediction?", ('Naive Bayes','Passive Aggressive'))
     
     if model == "Naive Bayes":
-        f = open('model/NB_text.pickle', 'rb') #loading model
+        f = open('/model/NB_text.pickle', 'rb') #loading model
         classifier = pickle.load(f)
     elif model == "Passive Aggressive":
-        f = open('model/PA_text.pickle', 'rb') #loading model
+        f = open('/model/PA_text.pickle', 'rb') #loading model
         classifier = pickle.load(f)
     
     st.write("  ")
