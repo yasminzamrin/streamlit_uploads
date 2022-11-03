@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 import re
-pip install nltk
 import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
