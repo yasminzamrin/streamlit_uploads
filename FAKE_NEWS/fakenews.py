@@ -19,7 +19,7 @@ col4, col5 , col6 = st.columns(3)
 	
 with top:
 	with col2:
-		image = PIL.Image.open('streamlit_uploads/FAKE_NEWS/images/logo.png')
+		image = PIL.Image.open('FAKE_NEWS/images/logo.png')
 		st.image(image, width=350)
 		st.write("  ")
 		#st.title("FAKE NEWS DETECTION")
