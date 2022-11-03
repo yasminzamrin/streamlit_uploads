@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import re
 #import nltk
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
 
